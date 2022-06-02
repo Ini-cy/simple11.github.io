@@ -1,0 +1,333 @@
+:root{
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Sans Pro', monospace;
+  --ff-tertiarty: 'Radio Canada', sans-serif;'
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+/* Colours */
+  --clr-light: #ffff;
+  --clr-dark: #303030;
+  --clr-black: #180A0A;
+  --clr-accent: #05595B;
+  --clr-yellow: #FFFF00;
+
+/* Font Sizes */
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15)
+
+
+
+}
+html{
+  scroll-behavior: smooth;
+
+}
+body{
+  background-color: var(--clr-black);
+
+}
+.parallax {
+  /* The image used */
+
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header_link{
+  font-family:var(--ff-primary);
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--clr-accent);
+}
+.header_link:hover{
+  color: var(--clr-accent);
+}
+.h{
+  margin-left: 20px;
+}
+.b{
+  margin-left: 1250px;
+  margin-right: 40px;
+}
+h2{
+  font: var(--fs-h2);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#home{
+  position: relative;
+}
+.intro{
+  text-align: center;
+  padding-bottom: 55px;
+  height: 100vh;
+}
+.intro-text{
+  position: relative;
+  /* text-transform: uppercase; */
+background-image: linear-gradient(
+ -225deg,
+ #231557 0%,
+ #44107a 29%,
+ #ff1361 67%,
+ #fff800 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #ffff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear;
+display: inline-block;
+   font-size: 190px;
+}
+
+@keyframes textclip {
+to {
+ background-position: 200% center;
+}
+  font-size: 200px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  /* color: var(--clr-yellow); */
+  /* opacity: 0.35; */
+}
+/* .intro-text:hover{
+  color:#FFC300;
+  opacity: 0.9;
+} */
+.intro-picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+}
+
+#about{
+  position: relative;
+}
+.about-page{
+  text-align: center;
+
+}
+.about-heading{
+  font-family: var(--ff-secondary);
+  font-size: 55px;
+  color: var(--clr-accent);
+}
+.about-text{
+  font-family: var(--ff-primary);
+  font-size: 25px;
+  color: var(--clr-accent);
+}
+
+
+
+/* .margin-settings{
+  margin-top: 50px;
+  text-align: center;
+  height: 100%;
+  opacity: 0.4;
+  font-family: 'Dancing Script', cursive;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}  */
+
+/* #products{
+  position: relative;
+}
+.products{
+  text-align: center;
+  font-family: var(--ff-secondary);
+  font-size: 50px;
+  margin-bottom: 100px;
+  color: var(--clr-accent);
+} */
+.pg{
+  /* margin-top: 30px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* text-align: center; */
+  color: var(--clr-accent);
+
+  /* background-color: var(--clr-black); */
+}
+#skin-products{
+  position: relative;
+}
+
+#hair-products{
+  position: relative;
+}
+
+#beard-products{
+  position: relative;
+}
+.skincare{
+  /* padding-top: 30px; */
+  /* text-align: center; */
+  position: relative;
+  /* color: var(--clr-yellow); */
+  /* opacity: 0.4; */\
+  display: flex;
+  text-align: center;
+  height: 98vh;
+}
+/* .skincare::before{
+  content: "";
+  background-image: url('skincare1-image.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+} */
+
+.div-settings{
+  display: relative;
+  width: 50%;
+  float: left;
+}
+.s-img{
+  width:80%;
+
+}
+
+.skin-text{
+  position: relative;
+  float: left;
+  width: 50%;
+  margin-left: -130px;
+  text-align: center;
+}
+
+
+.margin-settings:hover{
+  /* opacity:0.65; */
+}
+
+.sk1{
+  font-size: 40px;
+  font-weight: bold;
+  height: 1.1;
+}
+
+.sk1:hover{
+  color: #8D8DAA;
+}
+
+.sk2{
+  text-decoration: underline;
+  font-size: 20px;
+  height: 1.1;
+
+}
+
+.haircare{
+    position: relative;
+    color: var(--clr-accent);
+    text-align: center;
+    height: 98vh;
+
+}
+
+.h-img{
+  width:70%;
+  border-color: black;
+}
+
+.hair-text{
+  position: relative;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.beardgrooming{
+    position: relative;
+    color: var(--clr-accent);
+    text-align: center;
+    height: 98vh;
+}
+
+.b-img{
+  width:70%;
+}
+
+.beard-text{
+  position: relative;
+  float: left;
+  width: 50%;
+  margin-left: -130px;
+  text-align: center;
+}
+
+footer{
+
+  padding: 50px 0px;
+  text-align: center;
+
+}
+
+.footer__link{
+  font-size: 25px;
+  color: var(--clr-accent);
+  text-decoration: none;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.socials{
+  margin: 10px;
+  font-size: 30px;
+  color: var(--clr-accent);
+  text-decoration: none;
